@@ -6,7 +6,7 @@ let totalVolume = 0;
 
 for (let i = 0; i < numberOfBalls; i++) {
     let innerRadius = (smallestBallOuterDiameter / 2) + thicknessOfWalls * (i - 1);
-    let sphereVolume = 4 / 3 * Math.PI * innerRadius;
+    let sphereVolume = 4 / 3 * Math.PI * Math.pow(innerRadius, 3);
     totalVolume += sphereVolume;
 }
 
